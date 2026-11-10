@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 14px system-ui, sans-serif; width: 260px; margin: 0; padding: 16px; color: #1d2433; }
+  h1 { font-size: 15px; margin: 0 0 12px; }
+  button { width: 100%; padding: 10px; border: 0; border-radius: 8px; font-size: 14px; cursor: pointer; }
+  #fill { background: #2e6be6; color: #fff; font-weight: 600; }
+  #fill:hover { background: #2459c4; }
+  #edit { background: #eef1f6; color: #1d2433; margin-top: 8px; }
+  #status { margin-top: 12px; min-height: 18px; font-size: 13px; color: #4a5568; }
+  label { display: flex; gap: 6px; align-items: center; margin-top: 12px; font-size: 13px; color: #4a5568; }
+  .note { font-size: 11px; color: #7a8599; margin-top: 10px; }
+  button.link { width: auto; padding: 0; background: none; color: #2e6be6; font-size: 11px; text-decoration: underline; }
+</style>
+</head>
+<body>
+  <h1>Job Application Autofill</h1>
+  <button id="fill">Fill this page</button>
+  <button id="edit">Edit my profile</button>
+  <label><input type="checkbox" id="overwrite"> Overwrite fields that already have text</label>
+  <label><input type="checkbox" id="autodetect"> Ask to autofill when an application is detected</label>
+  <div class="note" id="neverNote" hidden>Prompts are turned off on this site. <button class="link" id="allowHere">Turn back on</button></div>
+  <div id="status"></div>
+  <div class="note">Nothing is submitted. Check the filled fields (outlined in green) before applying.</div>
+  <script src="popup.js"></script>
+</body>
+</html>
