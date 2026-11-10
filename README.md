@@ -1,3 +1,6 @@
+# resume-autofill-extension
+Chrome extension for creating a profile that can be used to autofill resume questions when applying for jobs.
+
 # Job Application Autofill (Chrome extension)
 
 Save your details once, then fill common job-application questions with one click.
